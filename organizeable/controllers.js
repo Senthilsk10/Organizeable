@@ -23,9 +23,7 @@ exports.createFolder = async (req, res) => {
     path,
     summary,
     parent,
-    type: 'folder',
-    owner: 'user_id_123',
-    permissions: { read: ['user_id_123'], write: ['user_id_123'] }
+    type: 'folder'
   });
 
   try {
@@ -52,10 +50,7 @@ exports.uploadFile = async (req, res) => {
       path,
       summary,
       parent,
-      type: 'file',
-      owner: 'user_id_123',
-      size: Buffer.byteLength(fileContent),
-      permissions: { read: ['user_id_123'], write: ['user_id_123'] }
+      type: 'file'
     });
 
     await newFile.save();
