@@ -3,7 +3,7 @@ const axios = require('axios');
 
 // GitHub credentials
 const GITHUB_USERNAME = 'your-username';
-const GITHUB_TOKEN = 'your-github-token';
+const GITHUB_TOKEN = 'GITHUB-PRIVATE-TOKEN';
 const REPO_NAME = 'your-repo-name';
 
 // Helper function to interact with GitHub API
